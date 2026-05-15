@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Suraj Survase – Digital Creator, AI Expert, Video Editor & Website Designer from Maharashtra."/>
+  <title>Suraj Survase | Digital Creator & Freelancer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <i class="fas fa-code logo-icon"></i>
+    <span>Suraj</span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home"         class="nav-link active" id="link-home">Home</a></li>
+    <li><a href="#about"        class="nav-link"        id="link-about">About</a></li>
+    <li><a href="#skills"       class="nav-link"        id="link-skills">Skills</a></li>
+    <li><a href="#services"     class="nav-link"        id="link-services">Services</a></li>
+    <li><a href="#portfolio"    class="nav-link"        id="link-portfolio">Work</a></li>
+    <li><a href="#contact"      class="nav-link"        id="link-contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas id="particleCanvas"></canvas>
+
+  <div class="hero-inner">
+    <!-- LEFT CONTENT -->
+    <div class="hero-content" id="heroContent">
+      <h1 class="hero-greeting">Hi There,</h1>
+      <h1 class="hero-name">I'm Suraj <span class="name-accent">Survase</span></h1>
+      <p class="hero-typing">I Am Into <span id="typingText" class="typing-text"></span><span class="cursor">|</span></p>
+
+      <a href="#about" class="btn-about" id="aboutBtn">About Me &nbsp;&#10148;</a>
+
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/suraj-survase-1825a9401"   target="_blank" class="soc-btn" title="LinkedIn"   id="socLinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/surajcontentlab-hub"           target="_blank" class="soc-btn" title="GitHub"     id="socGitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/surajsurvasevlogs/" target="_blank" class="soc-btn" title="Instagram" id="socInstagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/919657798459"                target="_blank" class="soc-btn" title="WhatsApp"   id="socWhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:suraj.contentlab@gmail.com"          class="soc-btn" title="Email"      id="socEmail"><i class="fas fa-envelope"></i></a>
+        <a href="https://youtube.com"                        target="_blank" class="soc-btn" title="YouTube"    id="socYouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- RIGHT AVATAR -->
+    <div class="hero-visual" id="heroVisual">
+      <div class="avatar-ring"></div>
+      <div class="avatar-circle">
+        <img src="profile.png" alt="Suraj Survase" class="avatar-img" id="heroAvatar"/>
+      </div>
+      <div class="float-tag tag-top"    id="tagAI">🤖 AI Expert</div>
+      <div class="float-tag tag-right"  id="tagVid">🎬 Video Editor</div>
+      <div class="float-tag tag-bottom" id="tagWeb">🌐 Web Designer</div>
+    </div>
+  </div>
+
+  <!-- SCROLL INDICATOR -->
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll Down</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <p class="sec-label">Get To Know More</p>
+    <h2 class="sec-title">About <span class="accent">Me</span></h2>
+
+    <div class="about-grid">
+      <div class="about-left" data-aos>
+        <div class="about-img-wrap">
+          <img src="profile.png" alt="Suraj Survase" class="about-img"/>
+          <div class="about-img-deco"></div>
+        </div>
+      </div>
+      <div class="about-right" data-aos>
+        <div class="about-cards-row">
+          <div class="info-card">
+            <i class="fas fa-award card-icon"></i>
+            <div>
+              <h4>Experience</h4>
+              <p>4+ Years</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-users card-icon"></i>
+            <div>
+              <h4>Clients</h4>
+              <p>150+ Happy</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-briefcase card-icon"></i>
+            <div>
+              <h4>Projects</h4>
+              <p>200+ Completed</p>
+            </div>
+          </div>
+        </div>
+        <p class="about-para">A passionate <strong>Digital Creator & Freelancer</strong> from the heart of Maharashtra. I transform raw ideas into stunning digital experiences — from viral reels to fully functional websites.</p>
+        <p class="about-para">I work with creators, students, brands, and businesses helping them grow digitally through creative storytelling, modern AI tools, and next-level video editing.</p>
+        <a href="#contact" class="btn-primary">Let's Work Together 🤝</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <p class="sec-label">Explore My</p>
+    <h2 class="sec-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skills-box" data-aos>
+        <h3 class="skills-box-title">Video & Design</h3>
+        <div class="skills-list">
+          <div class="skill-item"><i class="fas fa-check-circle skill-check"></i><span>Adobe Premiere Pro</span><div class="skill-bar"><div class="skill-fill" data-w="95"></div></div></div>
+          <div class="skill-item"><i class="fas fa-check-circle skill-check"></i><span>CapCut</span><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div></div>
+          <div class="skill-item"><i class="fas fa-check-circle skill-check"></i><span>Canva</span><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></div>
+          <div class="skill-item"><i class="fas fa-check-circle skill-check"></i><span>After Effects</span><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div></div>
+        </div>
+      </div>
+      <div class="skills-box" data-aos>
+        <h3 class="skills-box-title">Development & AI</h3>
+        <div class="skills-list">
+          <div class="skill-item"><i class="fas fa-check-circle skill-check"></i><span>HTML / CSS / JS</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div></div>
+          <div class="skill-item"><i class="fas fa-check-circle skill-check"></i><span>AI Tools (ChatGPT, MJ)</span><div class="skill-bar"><div class="skill-fill" data-w="93"></div></div></div>
+          <div class="skill-item"><i class="fas fa-check-circle skill-check"></i><span>Instagram Marketing</span><div class="skill-bar"><div class="skill-fill" data-w="91"></div></div></div>
+          <div class="skill-item"><i class="fas fa-check-circle skill-check"></i><span>Content Strategy</span><div class="skill-bar"><div class="skill-fill" data-w="96"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <p class="sec-label">What I Do</p>
+    <h2 class="sec-title">My <span class="accent">Services</span></h2>
+    <div class="services-grid">
+      <div class="svc-card" data-aos>
+        <div class="svc-icon-wrap"><i class="fas fa-ring"></i></div>
+        <h3>Wedding Card Videos</h3>
+        <p>Cinematic, emotional wedding invitation videos that leave a lasting impression.</p>
+        <span class="svc-badge">Most Popular</span>
+      </div>
+      <div class="svc-card" data-aos>
+        <div class="svc-icon-wrap"><i class="fas fa-film"></i></div>
+        <h3>Cinematic Reel Editing</h3>
+        <p>Viral-ready reels with pro-level cuts, color grading and emotional music sync.</p>
+      </div>
+      <div class="svc-card" data-aos>
+        <div class="svc-icon-wrap"><i class="fab fa-youtube"></i></div>
+        <h3>YouTube Video Editing</h3>
+        <p>Engaging long-form edits with thumbnails, intros and full channel branding.</p>
+      </div>
+      <div class="svc-card" data-aos>
+        <div class="svc-icon-wrap"><i class="fas fa-robot"></i></div>
+        <h3>AI Content Creation</h3>
+        <p>Cutting-edge AI tools to generate scripts, visuals, voiceovers and viral content.</p>
+        <span class="svc-badge badge-trending">Trending</span>
+      </div>
+      <div class="svc-card" data-aos>
+        <div class="svc-icon-wrap"><i class="fas fa-globe"></i></div>
+        <h3>Website Development</h3>
+        <p>Modern, responsive and blazing fast websites for brands, businesses & portfolios.</p>
+      </div>
+      <div class="svc-card" data-aos>
+        <div class="svc-icon-wrap"><i class="fas fa-palette"></i></div>
+        <h3>Poster & Thumbnail Design</h3>
+        <p>Eye-catching posters, YouTube thumbnails and social media graphics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="bstat" data-aos><span class="bnum" data-target="200" data-suf="+">0+</span><span class="blbl">Projects Done</span></div>
+    <div class="stat-line"></div>
+    <div class="bstat" data-aos><span class="bnum" data-target="150" data-suf="+">0+</span><span class="blbl">Happy Clients</span></div>
+    <div class="stat-line"></div>
+    <div class="bstat" data-aos><span class="bnum" data-target="50"  data-suf="K+">0K+</span><span class="blbl">Social Reach</span></div>
+    <div class="stat-line"></div>
+    <div class="bstat" data-aos><span class="bnum" data-target="98"  data-suf="%">0%</span><span class="blbl">Satisfaction Rate</span></div>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<section class="section section-alt" id="portfolio">
+  <div class="container">
+    <p class="sec-label">Browse My Recent</p>
+    <h2 class="sec-title">Portfolio</h2>
+    <div class="port-filter">
+      <button class="flt-btn active" data-filter="all"    id="filterAll">All</button>
+      <button class="flt-btn"        data-filter="video"  id="filterVideo">Video Editing</button>
+      <button class="flt-btn"        data-filter="web"    id="filterWeb">Web Design</button>
+      <button class="flt-btn"        data-filter="ai"     id="filterAI">AI Projects</button>
+      <button class="flt-btn"        data-filter="design" id="filterDesign">Design</button>
+    </div>
+    <div class="port-grid">
+
+      <!--
+      ============================================================
+        HOW TO ADD YOUR WORK — READ THIS CAREFULLY
+      ============================================================
+
+      STEP 1 — COPY this block for each project:
+
+        <div class="port-card" data-cat="CATEGORY" data-aos>
+          <a href="YOUR_LINK_HERE" target="_blank" class="port-link">
+            <div class="port-thumb">
+              <img src="images/your-image.jpg" alt="Project Name" class="port-img"/>
+              <div class="port-overlay">
+                <span class="port-play">&#9658;</span>
+                <div class="port-info">
+                  <span class="port-views">👁 Views or Info</span>
+                  <h4>Project Title</h4>
+                  <span class="port-pill">Category Label</span>
+                </div>
+              </div>
+              <span class="port-badge">LABEL</span>
+            </div>
+          </a>
+          <div class="port-card-footer">
+            <div>
+              <h4 class="port-title">Project Title</h4>
+              <p class="port-desc">Short description of the project</p>
+            </div>
+            <a href="YOUR_LINK_HERE" target="_blank" class="port-btn">View ↗</a>
+          </div>
+        </div>
+
+      STEP 2 — Set data-cat to one of:
+        video  → shows in "Video Editing" filter
+        web    → shows in "Web Design" filter
+        ai     → shows in "AI Projects" filter
+        design → shows in "Design" filter
+
+      STEP 3 — Image:
+        - Save your image/screenshot in:  d:\Projects\My Porfulioy\images\
+        - Use: src="images/your-file.jpg"
+        - For YouTube videos: use the thumbnail URL from YouTube
+          Example: https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg
+
+      STEP 4 — Links:
+        - YouTube video: href="https://www.youtube.com/watch?v=VIDEO_ID"
+        - Instagram reel: href="https://www.instagram.com/p/POST_ID/"
+        - Website: href="https://yoursite.com"
+        - If no link: remove the <a> tag and use <div class="port-thumb"> directly
+
+      ============================================================
+        YOUR PROJECTS ARE BELOW — EDIT THESE WITH REAL INFO
+      ============================================================
+      -->
+
+      <!-- PROJECT 1 — Video Reel -->
+      <div class="port-card" data-cat="video" data-aos>
+        <a href="https://www.instagram.com/surajsurvasevlogs/" target="_blank" class="port-link">
+          <div class="port-thumb pt1">
+            <!-- TIP: Replace pt1 with your image: style="background-image:url('images/reel1.jpg')" -->
+            <div class="port-overlay">
+              <span class="port-play">&#9658;</span>
+              <div class="port-info">
+                <span class="port-views">👁 2.1M Views</span>
+                <h4>Bappa Visarjan Reel</h4>
+                <span class="port-pill">Emotional Reel</span>
+              </div>
+            </div>
+            <span class="port-badge">VIRAL</span>
+          </div>
+        </a>
+        <div class="port-card-footer">
+          <div>
+            <h4 class="port-title">Bappa Visarjan Reel</h4>
+            <p class="port-desc">Most viral reel — 2.1M views on Instagram</p>
+          </div>
+          <a href="https://www.instagram.com/surajsurvasevlogs/" target="_blank" class="port-btn">View ↗</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 — Wedding Video -->
+      <div class="port-card" data-cat="video" data-aos>
+        <a href="https://www.instagram.com/surajsurvasevlogs/" target="_blank" class="port-link">
+          <div class="port-thumb pt2">
+            <div class="port-overlay">
+              <span class="port-play">&#9658;</span>
+              <div class="port-info">
+                <span class="port-views">💍 50+ Weddings</span>
+                <h4>Wedding Invite Video</h4>
+                <span class="port-pill">Wedding</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="port-card-footer">
+          <div>
+            <h4 class="port-title">Wedding Card Video</h4>
+            <p class="port-desc">Cinematic invitation for 50+ happy couples</p>
+          </div>
+          <a href="https://www.instagram.com/surajsurvasevlogs/" target="_blank" class="port-btn">View ↗</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 — Web Design -->
+      <div class="port-card" data-cat="web" data-aos>
+        <a href="#" target="_blank" class="port-link">
+          <!-- Replace href with the actual website URL -->
+          <div class="port-thumb pt3">
+            <div class="port-overlay">
+              <span class="port-play">🌐</span>
+              <div class="port-info">
+                <span class="port-views">⭐ 5.0 Rating</span>
+                <h4>Business Website</h4>
+                <span class="port-pill">Web Design</span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="port-card-footer">
+          <div>
+            <h4 class="port-title">Business Website</h4>
+            <p class="port-desc">Modern responsive website for a local business</p>
+          </div>
+          <a href="#" target="_blank" class="port-btn">View ↗</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 — AI Project -->
+      <div class="port-card" data-cat="ai" data-aos>
+        <a href="https://www.instagram.com/surajsurvasevlogs/" target="_blank" class="port-link">
+          <div class="port-thumb pt4">
+            <div class="port-overlay">
+              <span class="port-play">🤖</span>
+              <div class="port-info">
+                <span class="port-views">🔥 Trending</span>
+                <h4>AI Brand Video</h4>
+                <span class="port-pill">AI Content</span>
+              </div>
+            </div>
+            <span class="port-badge badge-ai">AI</span>
+          </div>
+        </a>
+        <div class="port-card-footer">
+          <div>
+            <h4 class="port-title">AI Brand Video</h4>
+            <p class="port-desc">Created fully with AI tools — scripts, visuals & voice</p>
+          </div>
+          <a href="https://www.instagram.com/surajsurvasevlogs/" target="_blank" class="port-btn">View ↗</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 5 — Featured Wide Card -->
+      <div class="port-card port-wide" data-cat="video" data-aos>
+        <a href="https://www.instagram.com/surajsurvasevlogs/" target="_blank" class="port-link">
+          <div class="port-thumb pt5">
+            <div class="port-overlay">
+              <span class="port-play">&#9658;</span>
+              <div class="port-info">
+                <span class="port-views">👁 3.8M Views</span>
+                <h4>Aai – Most Emotional Reel | Featured Work</h4>
+                <span class="port-pill">❤️ Most Viral</span>
+              </div>
+            </div>
+            <span class="port-badge badge-gold">MOST VIRAL</span>
+          </div>
+        </a>
+        <div class="port-card-footer">
+          <div>
+            <h4 class="port-title">Aai — Most Emotional Reel</h4>
+            <p class="port-desc">Featured work — 3.8M views, shared by thousands across Maharashtra</p>
+          </div>
+          <a href="https://www.instagram.com/surajsurvasevlogs/" target="_blank" class="port-btn">View ↗</a>
+        </div>
+      </div>
+      <div class="port-card" data-cat="design" data-aos>
+        <div class="port-thumb pt6">
+          <div class="port-overlay">
+            <span class="port-play">🎨</span>
+            <div class="port-info"><span class="port-views">📐 Brand Kit</span><h4>Full Brand Identity</h4><span class="port-pill">Branding</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <p class="sec-label">What My Clients Say</p>
+    <h2 class="sec-title">Testimonials</h2>
+    <div class="testi-grid">
+      <div class="testi-card" data-aos>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"Suraj edited our wedding invitation video and it was absolutely breathtaking! Everyone was in tears. 10/10 would recommend to every couple."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#f97316,#ec4899)">RK</div>
+          <div><strong>Rohit &amp; Kavya</strong><small>Wedding Clients, Pune</small></div>
+        </div>
+      </div>
+      <div class="testi-card" data-aos>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"He built my portfolio website in just 3 days! Ultra clean, super fast and exactly what I imagined. Best developer I've ever hired."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#4f9fff,#6C63FF)">AM</div>
+          <div><strong>Aditya More</strong><small>Freelance Designer, Mumbai</small></div>
+        </div>
+      </div>
+      <div class="testi-card" data-aos>
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"भाऊ तुझ्या AI content strategy मुळे माझ्या Instagram ने 10K followers in one month! Seriously next level work."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#06b6d4,#3b82f6)">PS</div>
+          <div><strong>Pratik Shinde</strong><small>Content Creator, Nashik</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <p class="sec-label">Get In Touch</p>
+    <h2 class="sec-title">Contact <span class="accent">Me</span></h2>
+    <div class="contact-grid">
+      <a href="mailto:suraj.contentlab@gmail.com" class="cnt-card" id="emailContactCard">
+        <i class="fas fa-envelope cnt-icon"></i>
+        <h3>Email</h3>
+        <p>suraj.contentlab@gmail.com</p>
+      </a>
+      <a href="https://www.instagram.com/surajsurvasevlogs/" target="_blank" class="cnt-card cnt-card-ig" id="igContactCard">
+        <i class="fab fa-instagram cnt-icon"></i>
+        <h3>Instagram</h3>
+        <p>@surajsurvasevlogs</p>
+      </a>
+      <a href="https://wa.me/919657798459?text=Hi Suraj! I want to discuss a project." target="_blank" class="cnt-card cnt-card-wa" id="waContactCard">
+        <i class="fab fa-whatsapp cnt-icon"></i>
+        <h3>WhatsApp</h3>
+        <p>Chat Directly</p>
+      </a>
+    </div>
+    <div class="contact-cta">
+      <a href="https://wa.me/919657798459?text=Hi Suraj! I want to discuss a project." target="_blank" class="btn-primary btn-wa" id="whatsappMainBtn">💬 Start on WhatsApp – It's Fast &amp; Free</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo"><i class="fas fa-code footer-code-icon"></i> Suraj<span class="accent">.</span></div>
+    <p class="footer-tag">Turning Ideas Into Digital Reality</p>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/surajsurvasevlogs/" target="_blank" class="fsoc" id="fSocIG"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com"                          target="_blank" class="fsoc" id="fSocYT"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/919657798459"                   target="_blank" class="fsoc" id="fSocWA"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/suraj-survase-1825a9401"     target="_blank" class="fsoc" id="fSocLI"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p class="footer-copy">Created with <span class="heart">❤️</span> by <strong>Suraj Survase</strong> &nbsp;·&nbsp; © 2025 All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
